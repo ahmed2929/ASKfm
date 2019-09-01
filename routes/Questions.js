@@ -9,7 +9,7 @@ const {ensureAuthenticated}= require('../helpers/auth');
 // Load User Model
 require('../models/ShoutOut');
 const ShoutOut = mongoose.model('ShoutOuts');
-router.post('/',(req,res)=>{
+router.post('/Shoutout',(req,res)=>{
     let anonymous;
     if(req.body.IsAnonymous==='on'){
          anonymous=true;
